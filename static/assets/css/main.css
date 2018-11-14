@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
+@font-face {
+    font-family: 'varsity_regularvarsityRg';
+    src: url('../fonts/Varsity-Regular.eot');
+    src: url('../fonts/Varsity-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Varsity-Regular.woff') format('woff'),
+    url('../fonts/Varsity-Regular.ttf') format('truetype'),
+    url('../fonts/Varsity-Regular.svg#varsity_regularvarsityRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-Regular.eot');
+    src: url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue-Regular.woff') format('woff'),
+    url('../fonts/BebasNeue-Regular.ttf') format('truetype'),
+    url('../fonts/BebasNeue-Regular.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'racing_sans_oneregular';
+    src: url('../fonts/RacingSansOne-Regular.eot');
+    src: url('../fonts/RacingSansOne-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RacingSansOne-Regular.woff') format('woff'),
+    url('../fonts/RacingSansOne-Regular.ttf') format('truetype'),
+    url('../fonts/RacingSansOne-Regular.svg#racing_sans_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.clear {clear:both;}
+.table {display:table;}
+.wrapper {width:100%; overflow:hidden;}
+.relative {position:relative;}
+.absolute {position:absolute;}
+
+/* Global properties ======================================================== */
+::selection{
+  color: #fff;
+  background: #353535;
+}
+::-moz-selection{
+  color: #fff;
+  background: #353535;
+}
+
+body, html {height:100%;font-family: Noto Sans KR;}
+
+body{ background:#000; border:0; font: 12px Arial, Helvetica, sans-serif; color:#353535 ; line-height:18px; min-width:1000px; position:relative; overflow:hidden;min-width:1000px;}
+
+.spinner{ position:absolute; z-index:99; background:url(../images/loader.gif) 50% 50% no-repeat #000; width:100%; height:100%; top:0; left:0}
+
+.extra {min-width:1000px;min-height:100%; height:auto !important; height:100%; margin: 0 auto 0px; overflow:hidden; position:relative; z-index:10; background: url(../images/bg1.jpg) center center no-repeat;}
+
+
+.main1 { width:100%;height:670px; position:relative; z-index:1;}
+
+.main2{ width:1000px; height:571px; position:absolute; left:50%; margin-left:-500px; top:50%; margin-top:-330px; z-index:2;}
+
+.ball1_wrapper{width: 554px; height: 554px; position: absolute; left: 223px; top: 10px; z-index: 10;}
+
+.ball1{width: 554px; height: 554px; background: url(../images/ball1.png) 0 0 no-repeat; position: absolute; left: 0; top: 0; z-index: 1;}
+
+header{width: 100%; position: absolute; left: 0; top: 90px; z-index: 30; text-align: center;}
+.logo { display:inline-block;text-decoration:none;}
+.logo .txt1{ text-decoration: none; font-family: 'varsity_regularvarsityRg'; font-size: 70px; line-height: 70px; padding-top: 10px; text-shadow:10px 10px 10px #000; text-transform: uppercase;color: #fff; }
+.logo .txt2{ text-decoration: none; font-family: 'BebasNeueRegular'; font-size: 20px; line-height: 20px;text-shadow:5px 5px 5px #000; text-transform: uppercase; color: #b28972; letter-spacing: 4px; padding-top: 10px;}
+
+.icons { width: 100%; position: absolute; left: 0; top: 450px; z-index: 31; text-align: center;}
+.icons > li { display:inline-block; padding:0 2px;position:relative;}
+.icons > li > a{display:block; width:37px; height:37px; background: #1b0201;border-radius:50%; -moz-border-radius:50%; -webkit-border-radius:50%;}
+
+
+
+footer{width: 100%; height: 55px; position: absolute;left: 0;bottom: 0; z-index: 20;}
+.copyright{color:#FFF; line-height:20px; padding-left:20px; float: left; padding-top: 10px;}
+.copyright a { color:#fff;}
+.tola{float: right;padding-right: 30px;}
+
+
+
+
+
+
+
+/* ============================= main menu ====================== */
+
+.menu { display:block; width: 323px; position:absolute; left:338px; top:160px; z-index:9; text-align:center; white-space:nowrap; }
+#menu {width: 100%;position: relative;}
+#menu > li { display:block;width: 323px; height:73px; position:absolute; overflow: hidden;}
+#menu > li > a{display:block; width: 100%; height:100%; text-decoration:none; position:relative; }
+#menu > li > a .over1{display:block; position: absolute;width:100%; height:100%; top:0px; z-index:1; background:url(../images/nav1.png) 0 0 no-repeat;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#menu > li > a:hover .over1{display:block; position: absolute;width:100%; height:100%; top:0px; z-index:1; background:url(../images/nav1_over.png) 0 0 no-repeat;}
+#menu > li > a .txt1{ display:block; position: absolute; height:100%;  top:0px; z-index:2;font-family:'racing_sans_oneregular';font-size:26px; line-height:60px; color:#8a300f; text-decoration:none; text-shadow:1px 1px 0px #e07b55;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#menu > li > a:hover .txt1{ display:block; position: absolute; height:100%;  top:0px; z-index:10;font-family:'racing_sans_oneregular';font-size:26px; line-height:60px; color:#fff; text-decoration:none; text-shadow:2px 2px 2px #000;}
+
+
+#menu > li.nav1{ left:-305px; top:0; z-index:1;}
+#menu > li.nav2{ left:-325px; top:75px; z-index:1;}
+#menu > li.nav3{ left:-295px; top:150px; z-index:1;}
+#menu > li.nav4{ left:-265px; top:225px; z-index:1;}
+#menu > li.nav5{ right:-305px; top:0; z-index:1;}
+#menu > li.nav6{ right:-325px; top:75px; z-index:1;}
+#menu > li.nav7{ right:-295px; top:150px; z-index:1;}
+#menu > li.nav8{ right:-265px; top:225px; z-index:1;}
+
+#menu > li.nav1 > a .txt1, #menu > li.nav1 > a .txt2 { left: 0; width: 210px;}
+#menu > li.nav2 > a .txt1, #menu > li.nav2 > a .txt2 { left: 0; width: 215px;}
+#menu > li.nav3 > a .txt1, #menu > li.nav3 > a .txt2 { left: 0; width: 190px;}
+#menu > li.nav4 > a .txt1, #menu > li.nav4 > a .txt2 { left: 0; width: 185px;}
+#menu > li.nav5 > a .txt1, #menu > li.nav5 > a .txt2 { right: 0; width: 185px;}
+#menu > li.nav6 > a .txt1, #menu > li.nav6 > a .txt2 { right: 0; width: 215px;}
+#menu > li.nav7 > a .txt1, #menu > li.nav7 > a .txt2 { right: 0; width: 190px;}
+#menu > li.nav8 > a .txt1, #menu > li.nav8 > a .txt2 { right: 0; width: 185px;}
+
+
+
+
+
+
+
+/* ============================= main layout ====================== */
+
+
+
+#content{ width:1000px; position:absolute; left:0px; top:0px; z-index:40;}
+#content > ul{ }
+#content > ul > li{ width:1000px; height:571px; position:absolute;}
+
+.close{ display:block; width:253px; height:73px; position:absolute; left:373px; top:535px; z-index:30;background:url(../images/close.png) top left no-repeat; text-align: center;font-family:'racing_sans_oneregular';font-size:26px; line-height:60px; color:#8a300f; text-decoration:none; text-shadow:1px 1px 0px #e07b55;}
+.close:hover {color:#fff;text-shadow:2px 2px 2px #000; background-position: bottom;}
+
+
+.box{ width:880px;height:520px; background: url(../images/content_bg.png) 0 0 no-repeat; position:relative; padding: 51px 60px 0px 60px; z-index: 1; }
+
+.col0,.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12   { float:left;}
+
+.col0 { width:1px; background:#131314; margin-left:29px; margin-right:30px; margin-top:20px;}
+
+.col1{ width:420px;}
+.col2{ width:400px;}
+.col3{ width:440px;}
+.col4{ width:200px;}
+
+
+
+
+
+
+
+.pad_left1{ padding-left:10px;}
+.pad_left2{ padding-left:20px;}
+.pad_left3{ padding-left:30px;}
+.pad_left4{ padding-left:40px;}
+.pad_left5{ padding-left:50px;}
+.pad_left6{ padding-left:60px;}
+
+
+
+
+a{ color:#8a300f; text-decoration: underline; outline:none}
+a:hover{ text-decoration: none}
+
+h2{ font-family:'racing_sans_oneregular';font-weight:normal; font-size:35px; color:#010000; line-height:30px; padding:10px 0 20px 0; text-shadow:2px 2px 5px rgba(0, 0, 0, 0.3);  }
+.h3{ font-family:'Noto Sans KR';font-weight:normal; font-size:14px; color:#353535; line-height:18px;padding-bottom: 5px; text-transform: uppercase;}
+
+
+
+.upper { text-transform:uppercase;}
+
+.color1{ color:#fff;}
+.color2{ color:#ffae00;}
+
+.text { padding:0 0 5px;}
+
+.line1 { height:2px; background:url(../images/line1_px.png) 0 0 repeat-x; margin:15px 0;}
+
+.radius1{border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;}
+
+.border1 { padding: 5px; background: #fff;}
+
+
+
+.img1 {margin-bottom:20px;margin-right:20px;}
+.img2 {margin-right:20px; }
+.img3 {margin-bottom:20px;}
+
+.video1 {width:414px; height:201px; position:relative; margin-bottom:20px; }
+.video1 a img {padding: 5px;background: #fff; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;
+    transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
+}
+.video1 a:hover img{background: #ff5a00;}
+
+.button1{ display:inline-block; height:20px; line-height:20px;  position:relative; text-decoration: none; margin-top:10px; margin-bottom:10px; font-size:18px; font-family:'BebasNeueRegular'; color:#8a300f; text-transform:uppercase; white-space:nowrap; letter-spacing:0px; background:url(../images/button1.png) 0 2px no-repeat; padding-left:20px;
+transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
+}
+.button1:hover { color:#e43d00; background:url(../images/button1.png) 5px 2px no-repeat;}
+
+.team1{width: 190px; float: left; margin-right: 20px; padding-bottom: 20px;}
+.team1.last{margin-right: 0;}
+.team1 .img{padding: 5px; background: #fff;border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; margin-bottom: 15px;}
+.team1 .txt{font-family:'Noto Sans KR';font-weight:normal; font-size:14px; color:#353535; line-height:18px;text-align: center; text-transform: uppercase;}
+
+.gal1 { width:190px; padding-bottom:20px; float:left; margin-right:25px; }
+.gal1.last { margin-right:0px; }
+.gal1 .txt{font-family:'Noto Sans KR';font-weight:normal; font-size:14px; color:#353535; line-height:18px; text-transform: uppercase;}
+
+.photo1 {width:190px; height:150px; margin-bottom:15px;}
+.photo1 a img {padding: 5px; background: #fff;border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; margin-bottom: 15px;
+    transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
+}
+
+.photo1 a:hover img { background: #ff5a00;}
+
+.ul1{ margin-bottom:0px;}
+.ul1 > li { line-height:28px; }
+.ul1 > li a{ display:block; height:100%; text-decoration:none; color:#353535; padding-left:20px; background: url(../images/li_st1.png) 0 8px no-repeat;
+    transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
+}
+.ul1 > li a:hover{ text-decoration:none; color:#e43d00; background-position: 10px 8px;}
+
+table{ border:1px solid #e3e3e3; text-align:left;}
+table td{ border: solid 1px #e3e3e3; padding:0px 10px; vertical-align:middle; }
+
+table thead tr { background:url(../images/table_px.jpg) 0 0 repeat-x; color:#353535; font-weight:bold;}
+table thead tr td {}
+
+table tbody tr {background-color:#d2d2d2; color:#000;}
+table tbody tr:first-child td{  }
+table tbody td:first-child{}
+table td{ }
+table td:first-child{height:31px;}
+
+.google_map{
+
+    width: 410px;
+    height: 250px;
+    border-radius:20px;
+    background: #fff;
+    position:relative;
+    overflow:hidden; margin-bottom:20px;padding: 5px;
+}
+
+
+
+/*===================== jScrollPane =====================*/
+
+.scroll-pane{width: 100%; height:404px; overflow: auto;}
+
+
+/*================= Contacts =========================*/
+
+#note{ width:410px;}
+.notification_error{ color:#f00; margin-bottom:5px }
+.notification_ok{ text-align: center;}
+
+#ajax-contact-form label{float:left; width: 100px; line-height:31px; color:#000;}
+#ajax-contact-form label.c{ margin-top:5px;}
+
+#ajax-contact-form input{ float:left; width:300px; height:29px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color: #fff; background: #888888; border: 1px solid #888888; margin-bottom:5px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; }
+#ajax-contact-form input:focus{border-color:#000; }
+
+#ajax-contact-form textarea{ float:left; width:300px; height:110px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color: #fff; background: #888888; border: 1px solid #888888; margin-bottom:5px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+#ajax-contact-form textarea:focus{border-color:#000; }
+
+#ajax-contact-form img{float:left; width:140px; height:53px; margin-top:5px; margin-left:10px;}
+
+#ajax-contact-form input.capthca{ float:left; width:124px; margin-top:5px; margin-right:10px;}
+
+#ajax-contact-form input.submit{ width:129px; height:44px; cursor:pointer; background:url(../images/submit.png) left top no-repeat; border:none; margin:5px 0 0 0px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;  text-indent:-999%; }
+#ajax-contact-form input.submit:hover{ background-position:bottom;}
