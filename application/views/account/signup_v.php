@@ -1,8 +1,13 @@
+<h1>회원가입</h1>
 <div>
   <div class="span4"></div>
   <div class="span4">
     <?php echo validation_errors(); ?>
-    <form class="form-horizontal" action="<?php echo BASEURL ?>account/register" method="post">
+    <!--
+    get 방식 - localhost/courtwork/account/register?email=weweew@nave.rcom&nickanme=ewwewe&~~~~~ / SELECT
+    post 방식 - localhost/courtwork/account/register (데이터가 숨겨있음) -> 중요한 데이터들 / INSERT UPDATE DELETsE
+    -->
+    <form class="form-horizontal" action="<?php echo BASEURL ?>account/signup" method="post">
       <div class="control-group">
         <label class="control-label" for="inputEmail">이메일</label>
         <div class="controls">

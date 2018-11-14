@@ -5,6 +5,10 @@
 
   <div class="extra">
 
+<?php if ($this->session->userdata('logged_in')): ?>
+  <div style="color:white"><?php echo $this->session->userdata('user_nickname') ?> 님! Gonnichiwa!</div>
+<?php endif ?>
+
     <div class="main1"></div>
 
     <div class="main2">
@@ -14,7 +18,6 @@
 
         <header style="visibility: visible; opacity: 1;">
           <a href="<?php echo BASEURL ?>" class="logo">
-            <img src="<?php echo IMG_DIR ?>/logo.png" alt="">
             <div class="txt1">COURTWORK</div>
             <div class="txt2">BASKETBALL GAME MATCHING SERVICE</div>
           </a>
@@ -28,42 +31,39 @@
 
       </div>
 
-
-
-
-
       <nav class="menu" style="visibility: hidden;">
         <ul id="menu">
-          <li class="nav1" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">MATCHING</span></a></li>
-          <li class="nav2" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">RECORD</span></a></li>
-          <li class="nav3" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">BOARD</span></a></li>
 
-          <li class="nav4" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">SIGNUP</span></a></li>
+          <?php if ( $this->session->userdata('logged_in') === TRUE): ?>
+            <li class="nav1" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">MATCHING</span></a></li>
+            <li class="nav2" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">RECORD</span></a></li>
+            <li class="nav3" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">BOARD</span></a></li>
 
-          <li class="nav5" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">MY TEAM</span></a></li>
-          <li class="nav6" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">GAMES</span></a></li>
-          <li class="nav7" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">EVENT</span></a></li>
+            <li class="nav5" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">MY TEAM</span></a></li>
+            <li class="nav6" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">GAMES</span></a></li>
+            <li class="nav7" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">EVENT</span></a></li>
+            <li class="nav8" style="margin-right: 0px;"><a href="<?php echo BASEURL ?>account/logout" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">LOGOUT</span></a></li>
 
-          <li class="nav8" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">SIGNIN</span></a></li>
+            <?php else: ?>
+             <li class="nav4" style="margin-left: 0px;"><a href="<?php echo BASEURL ?>account/signup" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">SIGNUP</span></a></li>
+             <li class="nav8" style="margin-right: 0px;"><a href="<?php echo BASEURL ?>account/signin" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">SIGNIN</span></a></li>
+           <?php endif ?>
+
+         </ul>
+       </nav>
+
+       <!--content -->
+       <article id="content">
+
+       </article>
+       <!--content end -->
 
 
-        </ul>
-      </nav>
-
-      <!--content -->
-      <article id="content">
-
-      </article>
-      <!--content end -->
 
 
+     </div>
 
-
-
-
-    </div>
-
-    <footer>
+     <footer>
       <div class="copyright">Copyright © 2018. CourtWork. All rights reserved.</a></div>
       <div class="tola">
 
@@ -83,12 +83,6 @@
       </div>
       <div class="clear"></div>
     </footer>
-
-
-
-
-
-
 
   </div>
 

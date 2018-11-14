@@ -10,11 +10,16 @@ class account_m extends CI_Model {
         return $this->db->query("SELECT * FROM courtwork_user")->result();
     }
 
-    function get($option)
+    function get_by_email($email)
     {
-        $result = $this->db->get_where('courtwork_user', array('email'=>$option['email']))->row();
-        var_dump($this->db->last_query());
-        return $result;
+        $this->db->where('email', $email);
+        $result = $this->db->get('courtwork_user');
+        if( $result->num_rows() == 0 ){         // email이 존재하지 않을 때
+            return FALSE;
+        }else{
+            return $result->row();
+        }
+
     }
 
     function add($option)

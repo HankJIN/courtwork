@@ -76,7 +76,7 @@ body{ background:#000; border:0; font: 12px Arial, Helvetica, sans-serif; color:
 
 .ball1{width: 554px; height: 554px; background: url(../images/ball1.png) 0 0 no-repeat; position: absolute; left: 0; top: 0; z-index: 1;}
 
-header{width: 100%; position: absolute; left: 0; top: 90px; z-index: 30; text-align: center;}
+header{width: 100%; position: absolute; left: 0; top: 230px; z-index: 30; text-align: center;}
 .logo { display:inline-block;text-decoration:none;}
 .logo .txt1{ text-decoration: none; font-family: 'varsity_regularvarsityRg'; font-size: 70px; line-height: 70px; padding-top: 10px; text-shadow:10px 10px 10px #000; text-transform: uppercase;color: #fff; }
 .logo .txt2{ text-decoration: none; font-family: 'BebasNeueRegular'; font-size: 20px; line-height: 20px;text-shadow:5px 5px 5px #000; text-transform: uppercase; color: #b28972; letter-spacing: 4px; padding-top: 10px;}

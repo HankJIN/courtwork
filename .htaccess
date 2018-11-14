@@ -4,7 +4,7 @@
     RewriteCond $1 !^(index\.php|images|captcha|data|include|uploads|robots\.txt)
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ /courtwork/index.php/$1 [L]
+    RewriteRule ^(.*)$ /courtwork/index.php?/$1 [L]
 </IfModule>
 
 <IfModule mod_env.c>
