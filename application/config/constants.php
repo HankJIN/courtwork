@@ -55,6 +55,7 @@ $base_url .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT
 define('IMG_DIR', 'http://'.$_SERVER['HTTP_HOST'].'/courtwork/static/assets/images');
 define('CSS_DIR', 'http://'.$_SERVER['HTTP_HOST'].'/courtwork/static/assets/css');
 define('JS_DIR', 'http://'.$_SERVER['HTTP_HOST'].'/courtwork/static/assets/js');
+define('FILE_DIR', 'http://'.$_SERVER['HTTP_HOST'].'/courtwork/static/assets/files');
 define('PLUGIN_DIR', 'http://'.$_SERVER['HTTP_HOST'].'/courtwork/static/plugins');
 define('BOOT_DIR', 'http://'.$_SERVER['HTTP_HOST'].'/courtwork/static');
 define('HOST_DIR', $_SERVER['HTTP_HOST']);

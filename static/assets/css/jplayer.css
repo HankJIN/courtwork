@@ -1,0 +1,65 @@
+.jp-jplayer{ overflow:hidden;}
+div.jp-audio {
+  color: #fff;
+  position:relative;
+  min-width:100px;
+  height:35px;
+  margin:0px 0 0 0px ;
+}
+
+
+/* @group CONTROLS */
+
+ul.jp-controls {
+
+  margin:0;
+  display:block;
+  min-width:100px;
+  height:35px;
+
+}
+
+
+
+/* @end */
+
+
+/* @group volume controls */
+
+
+a.jp-mute,
+a.jp-unmute {
+  min-width:30px;
+  height:35px; line-height: 35px;
+  float:left;
+  display:inline-block; text-decoration:none; color:#fff; font-family: 'BebasNeueRegular'; font-size: 18px; padding-left: 25px; padding-right: 60px;border-radius:18px; -moz-border-radius:18px; -webkit-border-radius:18px;
+}
+a.jp-mute span,
+a.jp-unmute span {
+  color:#fff;
+}
+a.jp-mute,
+a.jp-unmute {
+  margin-left: 0px;
+}
+
+a.jp-mute {
+  background:#8a300f url(../images/sound.png) right top no-repeat;
+}
+a.jp-mute:hover {
+
+}
+a.jp-unmute {
+  background:#8a300f url(../images/sound.png) right bottom no-repeat;
+  display: none;
+}
+a.jp-unmute:hover {
+
+}
+
+
+
+
+
+
+/* @end */
