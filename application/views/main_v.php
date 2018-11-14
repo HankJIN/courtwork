@@ -32,7 +32,7 @@
 
 
 
-      <nav class="menu" style="visibility: visible;">
+      <nav class="menu" style="visibility: hidden;">
         <ul id="menu">
           <li class="nav1" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">MATCHING</span></a></li>
           <li class="nav2" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">RECORD</span></a></li>
