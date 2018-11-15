@@ -9,4 +9,3 @@
 
 <IfModule mod_env.c>
   SetEnv CI_ENV development
-</IfModule>
