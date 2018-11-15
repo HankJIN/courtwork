@@ -1,12 +1,9 @@
-<h1> 영택쿤풀싸롱 </h1>
+<h1> 로그인 </h1>
 <div>
   <div class="span4"></div>
   <div class="span4">
     <?php echo validation_errors(); ?>
-    <!--
-    get 방식 - localhost/courtwork/account/register?email=weweew@nave.rcom&nickanme=ewwewe&~~~~~ / SELECT
-    post 방식 - localhost/courtwork/account/register (데이터가 숨겨있음) -> 중요한 데이터들 / INSERT UPDATE DELETsE
-    -->
+
     <form class="form-horizontal" action="<?php echo BASEURL ?>account/signin" method="post">
       <div class="control-group">
         <label class="control-label" for="inputEmail">이메일</label>
