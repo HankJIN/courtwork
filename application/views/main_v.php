@@ -1,90 +1,61 @@
-<body style="overflow: inherit;">
-  <div class="spinner"></div>
+  <!-- MAIN -->
+    <main role="main">
+      <!-- Main Header -->
 
-
-
-  <div class="extra">
-
-<?php if ($this->session->userdata('logged_in')): ?>
-  <div style="color:white"><?php echo $this->session->userdata('user_nickname') ?> 님! Gonnichiwa!</div>
-<?php endif ?>
-
-    <div class="main1"></div>
-
-    <div class="main2">
-
-      <div class="ball1_wrapper">
-        <div class="ball1" style="visibility: visible; margin-top: 0px;"></div>
-
-        <header style="visibility: visible; opacity: 1;">
-          <a href="<?php echo BASEURL ?>" class="logo">
-            <div class="txt1">COURTWORK</div>
-            <div class="txt2">BASKETBALL GAME MATCHING SERVICE</div>
-          </a>
-        </header>
-
-        <ul class="icons" style="visibility: visible; opacity: 1;">
-          <li><a href="#"><img src="<?php echo IMG_DIR ?>/social_ic1.png" style="opacity: 0.3;"></a></li>
-          <li><a href="#"><img src="<?php echo IMG_DIR ?>/social_ic2.png" style="opacity: 0.3;"></a></li>
-          <li><a href="#"><img src="<?php echo IMG_DIR ?>/social_ic3.png" style="opacity: 0.3;"></a></li>
-        </ul>
-
-      </div>
-
-      <nav class="menu" style="visibility: hidden;">
-        <ul id="menu">
-
-          <?php if ( $this->session->userdata('logged_in') === TRUE): ?>
-            <li class="nav1" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">MATCHING</span></a></li>
-            <li class="nav2" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">RECORD</span></a></li>
-            <li class="nav3" style="margin-left: 0px;"><a href="#" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">BOARD</span></a></li>
-
-            <li class="nav5" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">MY TEAM</span></a></li>
-            <li class="nav6" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">GAMES</span></a></li>
-            <li class="nav7" style="margin-right: 0px;"><a href="#" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">EVENT</span></a></li>
-            <li class="nav8" style="margin-right: 0px;"><a href="<?php echo BASEURL ?>account/logout" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">LOGOUT</span></a></li>
-
-            <?php else: ?>
-             <li class="nav4" style="margin-left: 0px;"><a href="<?php echo BASEURL ?>account/signup" class="ls"><span class="over1" style="left: 0px;"></span><span class="txt1" style="left: 0px;">SIGNUP</span></a></li>
-             <li class="nav8" style="margin-right: 0px;"><a href="<?php echo BASEURL ?>account/signin" class="rs"><span class="over1" style="right: 0px;"></span><span class="txt1" style="right: 0px;">SIGNIN</span></a></li>
-           <?php endif ?>
-
-         </ul>
-       </nav>
-
-       <!--content -->
-       <article id="content">
-
-       </article>
-       <!--content end -->
-
-
-
-
-     </div>
-
-     <footer>
-      <div class="copyright">Copyright © 2018. CourtWork. All rights reserved.</a></div>
-      <div class="tola">
-
-        <div id="jquery_jplayer" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="none" src="<?php echo FILE_DIR ?>/music.mp3"></audio></div>
-
-        <!-- Using the cssSelectorAncestor option with the default cssSelector class names to enable control association of standard functions using built in features -->
-
-        <div id="jp_container" class="jp-audio">
-          <ul class="jp-controls">
-
-            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute" style="opacity: 0.5; display: none;">SOUND</a></li>
-            <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" style="opacity: 0.5; display: inline;">SOUND</a></li>
-
-          </ul>
-
+      <header>
+        <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+          <div class="item">
+            <div class="s-12">
+              <img src="static/assets/images/header.png" alt="">
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80">
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">니또똥구를 즐기는 가장 편한 방법<br> CourtWork</h1>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40">건강이 중요시되면서 많은 운동동호회가 생기고 있다. 그러나 특히 농구와 같은 구기종목은 경기장을 예약하고, 경기를 잡는 방법은 아직 네이버 카페를 벗어나지 못하였다. 팀원들이 전부 운동을 좋아해, 경기 매칭 시스템에 혁식을 일으키겠다.</p></div>
+                    <div class="line">
+                      <div class="s-15 m-15 l-3 center">
+                        <a class="button button-white-stroke s-12" href="/">빠른 경기 매칭</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="clear"></div>
-    </footer>
+      </header>
 
-  </div>
+      <!-- Section 1 -->
+      <section class="section-small-padding background-white text-center">
+        <div class="line">
+          <div class="margin">
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-shield icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">팀 관리</h2>
+                <p class="margin-bottom-30">팀 등록,팀 정보 수정, 팀원 모집</p>
+                <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-umbrella icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">공지사항</h2>
+                <p class="margin-bottom-30">코트워크 이용에 대한 공지사항입니다.</p>
+                <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-home icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">이벤트</h2>
+                <p class="margin-bottom-30">다양한 농구경기 이벤트를 확인하세요.</p>
+                <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-
-
+    </main>
